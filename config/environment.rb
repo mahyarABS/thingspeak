@@ -16,6 +16,5 @@ Thingspeak::Application.configure do
 		:password => ''
 	}
 end
-
 # Initialize the rails application
 Thingspeak::Application.initialize!

@@ -53,16 +53,6 @@
         <td><%= c.text_field :url %></td>
       </tr>
       <tr>
-        <td class="left"><%= t(:video_id) %></td>
-        <td >
-      <%= c.text_field :video_id, :class=>'video_narrow'%>
-      <%= c.radio_button :video_type, 'youtube' %>
-      <span class="small"><%= t(:youtube) %></span>
-      <%= c.radio_button :video_type, 'vimeo' %>
-      <span class="small"><%= t(:vimeo) %></span>
-        </td>
-      </tr>
-      <tr>
         <td class="left"><%= t(:field) %> 1</td>
         <td><%= c.text_field :field1, :class => 'field' %></td>
       </tr>
@@ -96,7 +86,7 @@
       </tr>
       <tr>
         <td class="left"></td>
-        <td><%= c.submit t(:save_model, model: 'Channel'), class: 'btn btn-primary' %></td>
+        <td><%= c.submit t(:save_model, model: 'کانال'), class: 'btn btn-primary' %></td>
       </tr>
     </table>
   <% end %>
@@ -109,7 +99,7 @@
   <br><br>
 
   <h4><%= t(:channel_delete_message) %></h4>
-  <%= button_to t(:delete_model, model: 'Channel'), channel_path(@channel.id), :method => 'delete', :data => { :confirm => t(:confirm_channel_delete) }, class: 'btn btn-danger' %>
+  <%= button_to t(:delete_model, model: 'کانال'), channel_path(@channel.id), :method => 'delete', :data => { :confirm => t(:confirm_channel_delete) }, class: 'btn btn-danger' %>
 </div>
 <div id="sidebar_old">
 <ul>
@@ -119,13 +109,9 @@
       <br><br>
       <%= t(:help_channel_url) %>
       <br><br>
-      <%= t(:help_channel_video) %>
-      <br><br>
       <%= t(:help_channel_fields) %>
       <br><br>
       <%= t(:help_channel_clear) %>
-      <br><br>
-      <%= t(:help_channel_ranking) %>
       <br><br>
     </li>
   </ul>
@@ -139,10 +125,10 @@
     $('.field').each(function() {
       // if a value is present, show the 'remove' checkbox
       if ($(this).val()) {
-        $(this).after('<span class="small" id="span_' + $(this).attr('id') + '"><input type="checkbox" onclick="removeField(\'' + $(this).attr('id') + '\')"  /><span class="up2">remove field</span></span>');
+        $(this).after('<span class="small" id="span_' + $(this).attr('id') + '"><input type="checkbox" onclick="removeField(\'' + $(this).attr('id') + '\')"  /><span class="up2">حذف فیلد</span></span>');
       // else disable
       } else {
-        $(this).after('<span class="small" id="span_' + $(this).attr('id') + '"><input type="checkbox" onclick="addField(\'' + $(this).attr('id') + '\')"  /><span class="up2">add field</span></span>');
+        $(this).after('<span class="small" id="span_' + $(this).attr('id') + '"><input type="checkbox" onclick="addField(\'' + $(this).attr('id') + '\')"  /><span class="up2">اضافه کردن فیلد</span></span>');
       }
     });
 
@@ -152,7 +138,7 @@
   function addField(id) {
     $('#span_'+id).remove()
     $('#'+id).val(default_label + ' ' + id.substring(id.length-1));
-    $('#'+id).after('<span class="small" id="span_' + id + '"><input type="checkbox" onclick="removeField(\'' + id + '\')"  /><span class="up2">remove field</span></span>');
+    $('#'+id).after('<span class="small" id="span_' + id + '"><input type="checkbox" onclick="removeField(\'' + id + '\')"  /><span class="up2">حذف فیلد</span></span>');
     $('#'+id).select();
   }
 
@@ -160,7 +146,7 @@
   function removeField(id) {
     $('#span_'+id).remove();
     $('#'+id).val('');
-    $('#'+id).after('<span class="small" id="span_' + id + '"><input type="checkbox" onclick="addField(\'' + id + '\')"  /><span class="up2">add field</span></span>');
+    $('#'+id).after('<span class="small" id="span_' + id + '"><input type="checkbox" onclick="addField(\'' + id + '\')"  /><span class="up2">اضافه کردن فیلد</span></span>');
   }
 </script>
 

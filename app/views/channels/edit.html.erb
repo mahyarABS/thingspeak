@@ -95,10 +95,10 @@
 		$('.field').each(function() {
 			// if a value is present, show the 'remove' checkbox
 			if ($(this).val()) {
-				$(this).after('<span class="small" id="span_' + $(this).attr('id') + '"><input type="checkbox" onclick="removeField(\'' + $(this).attr('id') + '\')"  /><span class="up2">remove field</span></span>');
+				$(this).after('<span class="small" id="span_' + $(this).attr('id') + '"><input type="checkbox" onclick="removeField(\'' + $(this).attr('id') + '\')"  /><span class="up2">حذف فیلد</span></span>');
 			// else disable
 			} else {
-				$(this).after('<span class="small" id="span_' + $(this).attr('id') + '"><input type="checkbox" onclick="addField(\'' + $(this).attr('id') + '\')"  /><span class="up2">add field</span></span>');
+				$(this).after('<span class="small" id="span_' + $(this).attr('id') + '"><input type="checkbox" onclick="addField(\'' + $(this).attr('id') + '\')"  /><span class="up2">اضافه کردن فیلد</span></span>');
 			}
 		});
 

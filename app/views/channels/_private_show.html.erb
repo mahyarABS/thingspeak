@@ -1,12 +1,12 @@
 <%= render :partial => 'channelinfo', :locals => { :zone => "private" } %>
 
 <div class="col-xs-6 col-sm-6"  style="padding-left: 42px;">
-  <h4 style="color: #333;">Channel Stats</h4>
+  <h4 style="color: #333;">آمار کانال</h4>
   <table>
     <tr><td>Created</td><td ><abbr class="timeago channel_time_text" title="<%= @channel.created_at %>" ><%= @channel.created_at %></abbr></td></tr>
     <tr><td>Updated</td><td ><abbr class="timeago channel_time_text" title="<%= @channel.updated_at %>" ><%= @channel.updated_at %></abbr></td></tr>
   </table>
-  <span><%= @channel.feeds.count %> Entries</span>
+  <span><%= @channel.feeds.count %> داده</span>
 </div>
 
 <div class="CB">

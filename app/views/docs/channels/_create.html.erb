@@ -1,36 +1,33 @@
 <div>
   <%= render 'response' %>
-  <h2 id="create">Create a Channel</h2>
+  <h2 id="create">ایجاد یک کانال</h2>
 </div>
-
-<br>
-To create a new Channel, send an HTTP POST to <code><%= @ssl_api_domain %>channels<span class="format format-json">.json</span><span class="format format-xml">.xml</span></code> .
-
-<br><br>
-Valid parameters:
 <ul>
-  <li><b>api_key</b> (string) - User's API Key; please note that this is different than a Channel API key, and can be found in <a href="/account">your account details</a>. (required).</li>
-  <li><b>description</b> (string) - Description of the Channel (optional)</li>
-  <li><b>elevation</b> (integer) - Elevation in meters (optional)</li>
-  <li><b>field1</b> (string) - Field1 name (optional)</li>
-  <li><b>field2</b> (string) - Field2 name (optional)</li>
-  <li><b>field3</b> (string) - Field3 name (optional)</li>
-  <li><b>field4</b> (string) - Field4 name (optional)</li>
-  <li><b>field5</b> (string) - Field5 name (optional)</li>
-  <li><b>field6</b> (string) - Field6 name (optional)</li>
-  <li><b>field7</b> (string) - Field7 name (optional)</li>
-  <li><b>field8</b> (string) - Field8 name (optional)</li>
-  <li><b>latitude</b> (decimal) - Latitude in degrees (optional)</li>
-  <li><b>longitude</b> (decimal) - Longitude in degrees (optional)</li>
-  <li><b>metadata</b> (text) - Metadata for the Channel, which can include JSON, XML, or any other data (optional)</li>
-  <li><b>name</b> (string) - Name of the Channel (optional)</li>
-  <li><b>public_flag</b> (true/false) - Whether the Channel should be public, default false (optional)</li>
-  <li><b>tags</b> (string) - Comma-separated list of tags (optional)</li>
-  <li><b>url</b> (string) - Webpage URL for the Channel (optional)</li>
-</ul>
+  <li>ابتدا مطمئن شوید که طبق مرحله‌ی "وارد شدن به حساب کاربری" وارد حساب کاربری خود شده‌اید.
+</li>
+<li>در صورتی که با موفقیت وارد حساب کاربری خود شده باشید صفحه‌ای مانند صفحه‌ی زیر برای شما باز می‌شود:
+    <br><br>
+      <%= image_tag 'signupSuccess.jpeg', :size => '600x300', :alt => "login" %>
+    <br><br>
 
+  </li>
+
+<li>در قسمت "کانال‌های من" برروی گزینه‌ی "کانال جدید" کلیک کنید. تا پنجره‌ای مانند شکل زیر برای شما باز شود:
+    <br><br>
+      <%= image_tag 'newchannel.jpeg', :size => '600x300', :alt => "new channel" %>
+    <br><br>
+
+</li>
+<li>در قسمت تنظیمات کانال می‌توانید نام کانال، توضیحات کانال فرا داده‌ها، برچسب‌ها را وارد کنید.</li>
+<li>می توانید مختصات جغرافیایی مربوط به کانال را مشخص کنید به کمک وارد کردن مختصات در Longitude, Latitude و همچنین ارتفاع
+</li>
+<li>با انتخاب گزینه‌ی "آیا می‌خواهید عمومی شود؟" افراد دیگری که وارد سایت شوند و شناسه‌ی کانال شما را داشته باشند می‌توانند داده‌های شما را مشاهده کنند.</li>
+<li>به کمک فیلدهای URL شما می توانید لینکی برای دادن اطلاعات بیشتر برای کانال عمومی خود قرار دهید مانند پست یک وبلاگ یا وبسایت درباره ی کانال. </li>
+<li>در ادامه‌ی فرم همانطور که مشاهده می‌کنید 8 فیلد نشان داده شده است که شما می‌توانید با نوشتن نام آن‌ها و انتخاب تیک "اضافه کردن فیلد" فیلدهای شماره‌ی 2 تا 8 را به کانال خود به صورت دلخواه اضافه کنید. در صورتی که می‌خواهید فیلدی را حذف کنید تیک "حذف فیلد" را بزنید.</li>
+<li>پس از اینکه تنظیمات کانال خود را انجام دادید برروی گزینه‌ی "ذخیره‌ی کانال" کلیک کنید.</li>
+</ul>
 <br>
-Example POST:
+مثال استفاده از متد POST:
 
 <pre>
 POST <span class="str"><%= @ssl_api_domain %>channels<span class="format format-json">.json</span><span class="format format-xml">.xml</span></span>
@@ -41,11 +38,11 @@ POST <span class="str"><%= @ssl_api_domain %>channels<span class="format format-
 <br>
 
 <div class="format format-block-xxl format-text">
-  The response will be a webpage with your newly created Channel.
+  پاسخ یک صفحه شامل کانال جدید ساخته شده توسط شما است.
 </div>
 
 <div class="format format-block-xxl format-json">
-  The response will be a JSON object of the new channel, for example:
+  پاسخ یک آبجکت JSON شامل کانال جدید ساخته شده می باشد برای مثال:
 
 <pre class="prettyprint">
 {
@@ -74,7 +71,7 @@ POST <span class="str"><%= @ssl_api_domain %>channels<span class="format format-
 </div>
 
 <div class="format format-block-xxl format-xml">
-  The response will be an XML object of the new channel, for example:
+  پیاسخ یک ابجکت XML جدید شامل کانال جدید شما است مانند:
 
 <pre class="prettyprint">
 &lt;?xml version="1.0" encoding="UTF-8"?>

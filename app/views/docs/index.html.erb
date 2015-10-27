@@ -6,72 +6,65 @@
 
   <div class="col-sm-7 col-xs-12">
 
-    <h1 id="start">Getting Started</h1>
+    <h1 id="start">شروع به کار</h1>
 
     <br>
 
-    <h4>Quick Start</h4>
+    <h4>شروع سریع</h4>
     <ol style="font-size: 1.1em;">
-      <li><a href="/users/sign_up">Sign Up</a> for a ThingSpeak account</li>
-      <li>Create a new Channel by going to your <a href="/channels">Channels page</a> and clicking <em>Create New Channel</em></li>
-      <li><a href="/docs/channels#update_feed">Update your Channel</a> via URL:<br><code><%= @ssl_api_domain %>update?api_key=<span class="customcode">YOUR_CHANNEL_API_KEY</span>&field1=<span class="customcode">7</span></code>
-      <li><a href="/docs/channels#get_feed">View your Channel feed</a>:<br><code><%= @ssl_api_domain %>channels/<span class="customcode">YOUR_CHANNEL_ID</span>/feeds.json</code></li>
-      <li>Follow a <a title="ThingSpeak Tutorials" href="http://community.thingspeak.com/tutorials/">tutorial</a> for common devices and applications</li>
+      <li>برای ایجاد یک حساب کاربری در ThingTalk <a href="/users/sign_up">عضو شوید</a></li>
+      <li>با رفتن به <a href="/channels">صفحه ی کانال ها </a> کلیک بر روی <em> کانال جدید</em>یک کانال جدید برای خود بسازید.</li>
+      <li><a href="/docs/channels#update_feed">کانال خود را با درخواست </a> به آدرس زیر به روز رسانی کنید:<br><code><%= @ssl_api_domain %>update?api_key=<span class="customcode">YOUR_CHANNEL_API_KEY</span>&field1=<span class="customcode">7</span></code>
+      <li><a href="/docs/channels#get_feed">فیدهای کانال خود را مشاهده کنید</a>:<br><code><%= @ssl_api_domain %>channels/<span class="customcode">YOUR_CHANNEL_ID</span>/feeds.json</code></li>
     </ol>
 
     <br>
-    <h4 id="support">Support</h4>
-    <p>Please post your questions, comments, and feature requests in the <a title="ThingSpeak Forum" href="http://community.thingspeak.com/forum/">ThingSpeak Forum</a>.</p>
+    <h4 id="docsignup">عضویت در سایت</h4>
+    <p>
+برای عضویت ابتدا وارد صفحه‌ی اصلی سایت شوید. صفحه‌ی اصلی به شکل زیر است: <br><br>
+    <%= image_tag 'clickSignup (2).jpeg', :size => '600x300', :alt => "signup" %>
+    <br><br>
+
+برروی گزینه‌ی "همین حالا شروع کنید" کلیک کنید تا وارد صفحه‌ی ثبت‌نام شوید. همچنین می‌توانید از نوار بالای سایت برروی "عضو شوید" کلیک کنید. صفحه‌ی ثبت‌نام به شکل زیر است: <br><br>
+    <%= image_tag 'signupPageclick.jpeg', :size => '600x300', :alt => "signup" %>
+<br><br>
+
+اطلاعات خود را وارد کنید و برروی گزینه‌ی "ایجاد حساب کاربری" کلیک کنید به این ترتیب مراحل عضویت شما در صورت وجود نداشتن مشکلی انجام خواهد شد و صفحه‌ای مشابه صفحه‌ی زیر برای شما باز می‌شود که شامل پیام موفقیت ثبت‌نام است.
+<br><br>
+    <%= image_tag 'signupSuccess.jpeg', :size => '600x300', :alt => "signup" %>
+
+    </p>
 
     <br><br>
-    <h4 id="opensource">Open Source</h4>
+    <h4 id="doclogin">ورود به حساب کاربری</h4>
 
-    <p>The ThingSpeak API is&nbsp;available&nbsp;on <a title="ThingSpeak Open Source Web of Things API on GitHub" href="https://github.com/iobridge/thingspeak" target="_blank">GitHub</a> and includes the complete ThingSpeak API for processing HTTP requests, storing numeric and&nbsp;alphanumeric&nbsp;data, numeric data processing, location tracking, and status updates. &nbsp;The open source version follows the same documentation as the ThingSpeak hosted service.</p>
-
+    <p>در صورتی که طبق مرحله‌ی عضویت، حساب کاربری شما با موفقیت ایجاد شده باشد، برای ورود به حساب کاربری خود در صورتی که قبلا وارد نشده‌اید وارد صفحه‌ی اول سایت شوید و سپس از نوار بالای سایت برروی گزینه‌ی "ورود" کلیک کنید تا وارد صفحه‌ی ورود شوید:
+    <br><br>
+      <%= image_tag 'loginpage.jpeg', :size => '600x300', :alt => "login" %>
+    <br><br>
     <ul>
-      <li><a title="Open Source Web of Things API - ThingSpeak on GitHub" href="https://github.com/iobridge/thingspeak" target="_blank">GitHub Repository for ThingSpeak</a></li>
-      <li><a title="ThingSpeak GitHub Readme File" href="https://github.com/iobridge/thingspeak/blob/master/README.textile" target="_blank">ThingSpeak README and Setup Instructions</a></li>
-    </ul>
+      <li>نام کاربری یا ایمیل خود را که با آن ثبت‌نام کرده اید در قسمت نام کاربری وارد کنید.</li> 
+  <br>
+    <li>رمزعبور خود را نیز وارد کنید.</li>
+ <br>
+    <li>چنانچه می‌خواهید در مراجعه‌های بعدی بدون نیاز به انجام مراحل فوق به صورت خودکار وارد شوید، جلوی گزینه‌ی "حساب کاربری من را به خاطر بسپار" تیک بزنید.</li>
+ <br>
+ <li>در پایان برروی گزینه‌ی "ورود" کلیک کنید.</li>
+</ul>
+ </p>
+    
+
 
     <br><br>
-    <h4 id="headers">HTTP Headers</h4>
-    If you would like to reduce the number of HTTP headers sent by our application, please add the parameter <code>headers=false</code> to any HTTP request.
+    <h4 id="doclogout">خروج از حساب کاربری</h4>
+    <p>
+      در صورتی که طبق مرحله‌ی "وارد شدن به حساب کاربری" وارد حساب کاربری خود شده‌اید و می‌خواهید پس از انجام کارهای خود از حساب کاربری خود خارج شوید، صفحه‌ی اول سایت به شکل زیر نمایش داده می‌شود:
     <br><br>
-    API keys can optionally be sent via HTTP headers by setting the header name to <code><%= HTTP_HEADER_API_KEY_NAME %></code> and the header value to the API key.
-
-    <br><br><br><br>
-    <h4 id="timezones">Time Zones Reference</h4>
-    Time zones can be specified for any request by adding the <i>timezone</i> parameter with a value corresponding to any identifier found below.
-    Identifier names are case-sensitive, and should be URL-encoded in HTTP GET requests, for example:
+      <%= image_tag 'logout.jpeg', :size => '600x300', :alt => "login" %>
     <br><br>
-<pre>GET <span class="str"><%= @ssl_api_domain %>channels/9/fields/1/last.json?timezone=<span class="customcode">America%2FNew_York</span></span></pre>
-    <br>
-    The most common time zone identifiers are listed below.  ThingSpeak supports all <a href="http://www.iana.org/time-zones" target="_blank">IANA Time Zone Database</a>
-    identifers; a <a href="http://twiki.org/cgi-bin/xtra/tzdatepick.html" target="_blank">human-readable list</a> is also available.
-    <br><br>
-    <table class="table table-striped table-bordered table-condensed">
-      <tr>
-        <th>Identifier</th>
-        <th>Description</th>
-        <th>Current Offset</th>
-      </tr>
-      <% @timezones.each do |identifier, hash| %>
-        <tr>
-          <td><%= identifier %></td>
-          <td><%= raw(hash[:description]) %></td>
-          <td>UTC <%= hash[:offset] %></td>
-        </tr>
-      <% end %>
-    </table>
+همانطور که مشاهده می‌کنید در نوار آبی رنگ بالای سایت گزینه‌های متفاوتی نسبت به زمانی که وارد سایت نشده‌اید وجود دارد که یکی از آن‌ها که در قسمت بال سمت چپ قرار دارد "خروج" است. با کلیک برروی این گزینه شما قادر خواهید بود از سایت خارج شوید.
 
-    <div class="alert alert-warning">
-      <b>Note:</b>
-      <br>
-      If both the <i>offset</i> and <i>timezone</i> parameters are present, <i>offset</i> will be ignored in favor of the more accurate <i>timezone</i> parameter.
-    </div>
-
-    <br><br><br><br><br><br><br><br><br><br><br><br>
-
+    </p>
   </div>
 </div>
 

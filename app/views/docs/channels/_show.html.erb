@@ -1,36 +1,47 @@
 <div>
   <%= render 'response' %>
-  <h2 id="show">View a Channel</h2>
+  <h2 id="show">مشاهده ی کانال</h2>
 </div>
+<ul>
+  <li>ابتدا مطمئن شوید که طبق مرحله‌ی "وارد شدن به حساب کاربری" وارد حساب کاربری خود شده‌اید.
+برای مشاهده‌ی کانال ابتدا به صفحه‌ اصلی حساب کاربری خود بروید:
+    <br><br>
+      <%= image_tag 'showChannel.jpeg', :size => '600x300', :alt => "show channel" %>
+    <br><br>
 
-<br>
-To view a specific Channel, send an HTTP GET to
-<br>
-<code><%= @ssl_api_domain %>channels/<span class="customcode">CHANNEL_ID</span><span class="format format-json">.json</span><span class="format format-xml">.xml</span></code> .
 
-<br>
+  </li>
+  <li>همانطور که مشاهده می‌کنید کانالی که در مرحله‌ی "ایجاد کانال" ساخته‌اید در اینجا وجود دارد. با کلیک برروی نام کانال می‌توانید وارد محیط کانال شوید:
+    <br><br>
+      <%= image_tag 'newchannel.jpeg', :size => '600x300', :alt => "new channel" %>
+    <br><br>
 
-<div class="format format-json format-xml">
-  <br>
-  Valid parameters:
-  <ul>
-    <li><b>api_key</b> (string) - User's API Key; please note that this is different than a Channel API key, and can be found in <a href="/account">your account details</a>.  If this key is provided, the Channel's private details (such as the Channel's API keys) will also be shown. (optional).</li>
-  </ul>
-</div>
+  </li>
+  <li>در اینجا تعدادی تب برای انجام کارهای مختلف وجود دارد که برای مشاهده دو گزینه دارید:
+    <ul>
+      <li>مشاهده در حالت عمومی: با انتخاب این گزینه در صورتی که کانال شما عمومی باشد می‌توانید فیلدهای آن را مشاهده کنید.</li>
+      <li>مشاهده در حالت خصوصی: با انتخاب این گزینه می‌توانید فیلدهای کانال خود را در حالت خصوصی مشاهده کنید.</li>
+    </ul>
+    <br><br>
+      <%= image_tag 'showData.png', :size => '600x300', :alt => "show data" %>
+    <br><br>
 
+
+  </li>
+</ul>
 <br>
-Example GET:
+مثال استفاده از متد GET:
 
 <pre>GET <span class="str"><%= @ssl_api_domain %>channels/1417<span class="format format-json">.json</span><span class="format format-xml">.xml</span></span></pre>
 
 <br>
 
 <div class="format format-block-xxxl format-text">
-  The response will be a webpage that shows the Channel.
+  پاسخ صفحه ای است که کانال شما را نمایش می دهد.
 </div>
 
 <div class="format format-block-xxxl format-json">
-  The response will be a JSON object of the Channel, for example:
+  پاسخ آبجکت JSON ای از کانال شما است.
 
 <pre class="prettyprint">
 {
@@ -52,7 +63,7 @@ Example GET:
 </div>
 
 <div class="format format-block-xxxl format-xml">
-  The response will be an XML object of public Channels, for example:
+  پاسخ آبجکت XML ای از کانال شما است.
 
 <pre class="prettyprint">
 &lt;?xml version="1.0" encoding="UTF-8"?>

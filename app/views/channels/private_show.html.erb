@@ -44,9 +44,9 @@
 			{ flag: checked },
 			function (response) {
 				if (checked) {
-		      $("#watchText").text("Un-watch");
+		      $("#watchText").text("عدم مشاهده");
 		    } else {
-		      $("#watchText").text("Watch");
+		      $("#watchText").text("مشاهده");
 		    }
 			}
 		);
@@ -81,10 +81,10 @@ $(document).on('page:load ready', function() {
 
       $("#watch").button();
       if ($("#watch").attr("checked")) {
-	  $("#watchText").text("Un-watch");
+	  $("#watchText").text("عدم مشاهده");
       }
       else {
-	  $("#watchText").text("Watch");
+	  $("#watchText").text("مشاهده");
       }
       $("#maincontent_nowidth").tabs({
 			  select: function( e, ui) {
