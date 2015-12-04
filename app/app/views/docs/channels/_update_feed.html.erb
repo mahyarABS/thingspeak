@@ -1,0 +1,123 @@
+<div>
+  <%= render 'response' %>
+  <h2 id="update_feed">افزودن داده به فیلدهای یک کانال</h2>
+</div>
+<p>
+  برای اینکار باید ابتدا با مفهوم کلید نوشتن یا Write API KEY آشنا شوید. هر کانال برای اینکه مجزا شود یک کد 16 حرفی به آن اختصاص داده می‌شود که آن کانال را به طور یکتا مشخص می‌کند. این کلید در واقع شناسه‌ی کانال شما است که در زمانی که شما می‌خواهید به یکی از کانال‌های خود داده‌ای اضافه کنید یا داده‌ای را بخوانید از این کلید استفاده می‌کنید. دقت کنید که در صورتی که شخص دیگری کلید یکی از کانال‌های  شما را داشته باشد حتی زمانی که کانال شما در حالت خصوصی قرار دارد می‌‌تواند به فیلدهای آن کانال دسترسی داشته باشد و داده‌ها را بخواند یا حذف کند.
+<ul> 
+<li>ابتدا مطمئن شوید که طبق مرحله‌ی "وارد شدن به حساب کاربری" وارد حساب کاربری خود شده‌اید.</li>
+<li>از نوار بالای صفحه برروی گزینه‌ی "کانال‌ها" و سپس زیرگزینه‌ی "کانال‌های من" را اننخاب کنید:
+    <br><br>
+      <%= image_tag 'addfielddata.jpeg', :size => '600x300', :alt => "field" %>
+    <br><br>
+      <%= image_tag 'showChannel.jpeg', :size => '600x300', :alt => "login" %>
+    <br><br>
+</li>
+
+<li>حال در زیر نام کانال شما 5 گزینه وجود دارد برروی "وارد کردن/نمایش‌داده" کلیک کنید تا صفحه‌ی زیر برای کانال انتخاب شده باز شود.
+    <br><br>
+      <%= image_tag 'addChannelClick.jpeg', :size => '600x300', :alt => "login" %>
+    <br><br>
+      <%= image_tag 'addChannelAPI.jpeg', :size => '600x300', :alt => "login" %>
+    <br><br>
+</li>
+<li>همانطور که مشاهده می‌کنید در سمت راست پنجره‌ی فوق روش نوشتن برروی یا خواندن داده‌‌ی یک یا چند فیلد توضیح داده شده است.</li>
+<li>با وارد کردن دستور نوشته شده در زیر Write API KEY شما می‌توانید به فیلدهای کانال انتخاب شده که در مثال ما کانال8 است داده اضافه کنید.</li>
+<li>با فرستادن درخواست http://188.240.196.124/update?key=NMH04AOVILAUGL9C&field1=0   که در پنجره‌ی بالا نوشته شده است به فیلد 1 از کانال انتخابی که در این مثال کانال 8 است عدد 0 اضافه می‌شود. برای فرستادن داده به فیلدهای دیگر کافی است عبارت &field#=num را به انتهای درخواست فوق اضافه کنید که در آن # شماره‌ی فیلد است که مقداری از 1 تا 8 می‌تواند باشد و num مقداری است که می‌خواهید در این فیلد ذخیره شود. پس برای اینکه به تمام فیلدهای یک کانال مقداری بدهیم به شکل زیر عمل می‌کنیم:
+http://188.240.196.124/update?key=NMH04AOVILAUGL9C&field1=0&field2=10&field3=10&field4=0&field5=10&field6=10&field7=0&field2=8
+</li>
+</ul>
+برای خواندن داده‌های یک کانال کافی است درخواستی که در زیر شاخه‌ی "مشاهده‌ی داده‌ها" قرار دارد را وارد کنید به این ترتیب تمام مقادیر موجود در فیلدها به شما بازگردانده می‌شود. این داده‌ها در قالب json به شما برمی‌گردد و شما می‌توانید آن‌ها را دریافت و عملیات مورد نظر خود را برروی آن‌ها انجام دهید.
+
+</p>
+<br>
+برای به روز رسیانی فید یک کانال یک درخواست HTTP GET یا POST به صورت زیر وارد کنید.<br>
+<code><%= @ssl_api_domain %>update<span class="format format-json">.json</span><span class="format format-xml">.xml</span></code> .
+
+<br><br>
+پارامترهای معتبر:
+<ul>
+  <li><b>api_key</b> (string) - Write API Key برای این کانال خاص (required).  </li>
+  <li><b>field1</b> (string) - Field 1 data (optional)</li>
+  <li><b>field2</b> (string) - Field 2 data (optional)</li>
+  <li><b>field3</b> (string) - Field 3 data (optional)</li>
+  <li><b>field4</b> (string) - Field 4 data (optional)</li>
+  <li><b>field5</b> (string) - Field 5 data (optional)</li>
+  <li><b>field6</b> (string) - Field 6 data (optional)</li>
+  <li><b>field7</b> (string) - Field 7 data (optional)</li>
+  <li><b>field8</b> (string) - Field 8 data (optional)</li>
+  <li><b>lat</b> (decimal) - Latitude in degrees (optional)</li>
+  <li><b>long</b> (decimal) - Longitude in degrees (optional)</li>
+  <li><b>elevation</b> (integer) - Elevation in meters (optional)</li>
+  <li><b>status</b> (string) - Status update message (optional)</li>
+  <li><b>created_at</b> (datetime) - Date when this feed entry was created, in <a href="http://en.wikipedia.org/wiki/ISO_8601" target=_blank>ISO 8601</a> format, for example: <code>2014-12-31 23:59:59</code> .  Time zones can be specified via the <a href="/docs#timezones">timezone</a> parameter (optional)</li>
+</ul>
+
+<br>
+مثال برای متد POST:
+
+<pre>
+POST <span class="str"><%= @ssl_api_domain %>update<span class="format format-json">.json</span><span class="format format-xml">.xml</span></span>
+     api_key=<span class="customcode"><%= @channel_api_key %></span>
+     field1=<span class="customcode">73</span>
+</pre>
+
+<br>
+
+<div class="format format-block-xl format-text">
+  پاسخ ID دامنه ای است که تغییر کرده است.: <code>18</code>
+  <br><br>
+  اگر جواب <code>0</code> است عملیات به روز رسانی با مشکل مواجه شده است.
+</div>
+
+<div class="format format-block-xl format-json">
+  پاسخ یک آبجکت JSON از فید جدید خواهد بود مانند:
+
+<pre class="prettyprint">
+{
+  "channel_id": 3,
+  "field1": "73",
+  "field2": null,
+  "field3": null,
+  "field4": null,
+  "field5": null,
+  "field6": null,
+  "field7": null,
+  "field8": null,
+  "created_at": "2014-02-25T14:13:01-05:00",
+  "entry_id": 320,
+  "status": null,
+  "latitude": null,
+  "longitude": null,
+  "elevation": null
+}
+</pre>
+
+</div>
+
+<div class="format format-block-xl format-xml">
+  پاسخ یک آبجکت XML از فید جدید خواهد بود مانند:
+
+<pre class="prettyprint">
+&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;feed>
+  &lt;channel-id type="integer">3&lt;/channel-id>
+  &lt;field1>73&lt;/field1>
+  &lt;field2 nil="true"/>
+  &lt;field3 nil="true"/>
+  &lt;field4 nil="true"/>
+  &lt;field5 nil="true"/>
+  &lt;field6 nil="true"/>
+  &lt;field7 nil="true"/>
+  &lt;field8 nil="true"/>
+  &lt;created-at type="dateTime">2014-02-25T14:15:42-05:00&lt;/created-at>
+  &lt;entry-id type="integer">321&lt;/entry-id>
+  &lt;status nil="true"/>
+  &lt;latitude type="decimal" nil="true"/>
+  &lt;longitude type="decimal" nil="true"/>
+  &lt;elevation nil="true"/>
+&lt;/feed>
+</pre>
+
+</div>
+

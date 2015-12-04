@@ -1,0 +1,24 @@
+<ul class="nav nav-stacked" id="bootstrap-sidebar">
+
+  <% if params[:action] == 'index' %>
+    <li><a href="#start">شروع به کار</a></li>
+    <li class="subitem"><a href="#docsignup">عضویت در سایت</a></li>
+    <li class="subitem"><a href="#doclogin">ورود به حساب کاربری</a></li>
+    <li class="subitem"><a href="#doclogout">خروج از حساب کاربری</a></li>
+  <% else %>
+    <li><a href="/docs">شروع به کار</a></li>
+  <% end %>
+
+  <% if params[:action] == 'channels' %>
+    <li><a href="#channels">کانال ها</a></li>
+    <li class="subitem"><a href="#create">ایجاد کانال</a></li>
+    <li class="subitem"><a href="#show">مشاهده ی کانال</a></li>
+    <li class="subitem"><a href="#update_feed">افزودن داده به فیلدهای یک کانال</a></li>
+    <li class="subitem"><a href="#get_feed">خواندن داده از  فیلدهای یک کانال</a></li>
+  <% else %>
+    <li><a href="/docs/channels">کانال ها</a></li>
+  <% end %>
+
+  
+</ul>
+

@@ -1,0 +1,101 @@
+<div>
+  <%= render 'response' %>
+  <h2 id="create">ایجاد یک کانال</h2>
+</div>
+<ul>
+  <li>ابتدا مطمئن شوید که طبق مرحله‌ی "وارد شدن به حساب کاربری" وارد حساب کاربری خود شده‌اید.
+</li>
+<li>در صورتی که با موفقیت وارد حساب کاربری خود شده باشید صفحه‌ای مانند صفحه‌ی زیر برای شما باز می‌شود:
+    <br><br>
+      <%= image_tag 'signupSuccess.jpeg', :size => '600x300', :alt => "login" %>
+    <br><br>
+
+  </li>
+
+<li>در قسمت "کانال‌های من" برروی گزینه‌ی "کانال جدید" کلیک کنید. تا پنجره‌ای مانند شکل زیر برای شما باز شود:
+    <br><br>
+      <%= image_tag 'newchannel.jpeg', :size => '600x300', :alt => "new channel" %>
+    <br><br>
+
+</li>
+<li>در قسمت تنظیمات کانال می‌توانید نام کانال، توضیحات کانال فرا داده‌ها، برچسب‌ها را وارد کنید.</li>
+<li>می توانید مختصات جغرافیایی مربوط به کانال را مشخص کنید به کمک وارد کردن مختصات در Longitude, Latitude و همچنین ارتفاع
+</li>
+<li>با انتخاب گزینه‌ی "آیا می‌خواهید عمومی شود؟" افراد دیگری که وارد سایت شوند و شناسه‌ی کانال شما را داشته باشند می‌توانند داده‌های شما را مشاهده کنند.</li>
+<li>به کمک فیلدهای URL شما می توانید لینکی برای دادن اطلاعات بیشتر برای کانال عمومی خود قرار دهید مانند پست یک وبلاگ یا وبسایت درباره ی کانال. </li>
+<li>در ادامه‌ی فرم همانطور که مشاهده می‌کنید 8 فیلد نشان داده شده است که شما می‌توانید با نوشتن نام آن‌ها و انتخاب تیک "اضافه کردن فیلد" فیلدهای شماره‌ی 2 تا 8 را به کانال خود به صورت دلخواه اضافه کنید. در صورتی که می‌خواهید فیلدی را حذف کنید تیک "حذف فیلد" را بزنید.</li>
+<li>پس از اینکه تنظیمات کانال خود را انجام دادید برروی گزینه‌ی "ذخیره‌ی کانال" کلیک کنید.</li>
+</ul>
+<br>
+مثال استفاده از متد POST:
+
+<pre>
+POST <span class="str"><%= @ssl_api_domain %>channels<span class="format format-json">.json</span><span class="format format-xml">.xml</span></span>
+     api_key=<span class="customcode"><%= @user_api_key %></span>
+     name=<span class="customcode">My New Channel</span>
+</pre>
+
+<br>
+
+<div class="format format-block-xxl format-text">
+  پاسخ یک صفحه شامل کانال جدید ساخته شده توسط شما است.
+</div>
+
+<div class="format format-block-xxl format-json">
+  پاسخ یک آبجکت JSON شامل کانال جدید ساخته شده می باشد برای مثال:
+
+<pre class="prettyprint">
+{
+  "id": 4,
+  "name": "My New Channel",
+  "description": null,
+  "metadata": null,
+  "latitude": null,
+  "longitude": null,
+  "created_at": "2014-03-25T13:12:50-04:00",
+  "elevation": null,
+  "last_entry_id": null,
+  "ranking": 15,
+  "username": "hans",
+  "tags": [],
+  "api_keys":
+  [
+    {
+      "api_key": "XXXXXXXXXXXXXXXX",
+      "write_flag": true
+    }
+  ]
+}
+</pre>
+
+</div>
+
+<div class="format format-block-xxl format-xml">
+  پیاسخ یک ابجکت XML جدید شامل کانال جدید شما است مانند:
+
+<pre class="prettyprint">
+&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;channel>
+    &lt;id type="integer">4&lt;/id>
+    &lt;name>My New Channel&lt;/name>
+    &lt;description nil="true" />
+    &lt;metadata nil="true" />
+    &lt;latitude type="decimal" nil="true" />
+    &lt;longitude type="decimal" nil="true" />
+    &lt;created-at type="dateTime">2014-03-25T20:17:44-04:00&lt;/created-at>
+    &lt;elevation nil="true" />
+    &lt;last-entry-id type="integer" nil="true" />
+    &lt;ranking type="integer">15&lt;/ranking>
+    &lt;username>hans&lt;/username>
+    &lt;tags type="array" />
+    &lt;api-keys type="array">
+        &lt;api-key>
+            &lt;api-key>XXXXXXXXXXXXXXXX&lt;/api-key>
+            &lt;write-flag type="boolean">true&lt;/write-flag>
+        &lt;/api-key>
+    &lt;/api-keys>
+&lt;/channel>
+</pre>
+
+</div>
+

@@ -1,0 +1,87 @@
+<div>
+  <%= render 'response' %>
+  <h2 id="show">مشاهده ی کانال</h2>
+</div>
+<ul>
+  <li>ابتدا مطمئن شوید که طبق مرحله‌ی "وارد شدن به حساب کاربری" وارد حساب کاربری خود شده‌اید.
+برای مشاهده‌ی کانال ابتدا به صفحه‌ اصلی حساب کاربری خود بروید:
+    <br><br>
+      <%= image_tag 'showChannel.jpeg', :size => '600x300', :alt => "show channel" %>
+    <br><br>
+
+
+  </li>
+  <li>همانطور که مشاهده می‌کنید کانالی که در مرحله‌ی "ایجاد کانال" ساخته‌اید در اینجا وجود دارد. با کلیک برروی نام کانال می‌توانید وارد محیط کانال شوید:
+    <br><br>
+      <%= image_tag 'newchannel.jpeg', :size => '600x300', :alt => "new channel" %>
+    <br><br>
+
+  </li>
+  <li>در اینجا تعدادی تب برای انجام کارهای مختلف وجود دارد که برای مشاهده دو گزینه دارید:
+    <ul>
+      <li>مشاهده در حالت عمومی: با انتخاب این گزینه در صورتی که کانال شما عمومی باشد می‌توانید فیلدهای آن را مشاهده کنید.</li>
+      <li>مشاهده در حالت خصوصی: با انتخاب این گزینه می‌توانید فیلدهای کانال خود را در حالت خصوصی مشاهده کنید.</li>
+    </ul>
+    <br><br>
+      <%= image_tag 'showData.png', :size => '600x300', :alt => "show data" %>
+    <br><br>
+
+
+  </li>
+</ul>
+<br>
+مثال استفاده از متد GET:
+
+<pre>GET <span class="str"><%= @ssl_api_domain %>channels/1417<span class="format format-json">.json</span><span class="format format-xml">.xml</span></span></pre>
+
+<br>
+
+<div class="format format-block-xxxl format-text">
+  پاسخ صفحه ای است که کانال شما را نمایش می دهد.
+</div>
+
+<div class="format format-block-xxxl format-json">
+  پاسخ آبجکت JSON ای از کانال شما است.
+
+<pre class="prettyprint">
+{
+  "id": 4,
+  "name": "My New Channel",
+  "description": null,
+  "metadata": null,
+  "latitude": null,
+  "longitude": null,
+  "created_at": "2014-03-25T13:12:50-04:00",
+  "elevation": null,
+  "last_entry_id": null,
+  "ranking": 15,
+  "username": "hans",
+  "tags": []
+}
+</pre>
+
+</div>
+
+<div class="format format-block-xxxl format-xml">
+  پاسخ آبجکت XML ای از کانال شما است.
+
+<pre class="prettyprint">
+&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;channel>
+    &lt;id type="integer">4&lt;/id>
+    &lt;name>My New Channel&lt;/name>
+    &lt;description nil="true" />
+    &lt;metadata nil="true" />
+    &lt;latitude type="decimal" nil="true" />
+    &lt;longitude type="decimal" nil="true" />
+    &lt;created-at type="dateTime">2014-03-25T20:17:44-04:00&lt;/created-at>
+    &lt;elevation nil="true" />
+    &lt;last-entry-id type="integer" nil="true" />
+    &lt;ranking type="integer">15&lt;/ranking>
+    &lt;username>hans&lt;/username>
+    &lt;tags type="array" />
+&lt;/channel>
+</pre>
+
+</div>
+

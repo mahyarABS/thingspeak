@@ -1,0 +1,42 @@
+<div id="home-top">
+
+  <div id="home-top-center">
+   
+    <div>
+      <%= link_to t(:get_started), new_user_registration_path, :class => 'btn btn-danger btn-lg' %>
+      <br><br>
+      <a href="/docs" target="_blank"><%= t(:documentation) %></a>
+      &nbsp; | &nbsp;
+      <a href="http://community.thingspeak.com/forum/" target="_blank"><%=t(:support)%></a>
+
+    </div>
+  </div>
+
+</div>
+
+<br><br>
+
+<div class="container">
+
+  <div class="row">
+
+    <%= render 'layouts/flash' %>
+
+
+
+  <div class="jumbotron rtl">
+    <h1>شروع کنید</h1>
+    <p><%= link_to t(:signup), new_user_registration_path, :class => 'btn btn-primary btn-sm' %> آگر آماده اید که اینترنت اشیاء خود را بسازید با یک حساب کاربری رایگان</p>
+    <p>
+      <a href="/docs" target="_blank" class="btn btn-info btn-lg btn-margin">بیشتر بدانید</a>
+      <a id="contact_link" class="btn btn-success btn-lg btn-margin"><%= t(:contact_us) %></a>
+    </p>
+    <div id="contact_form">
+      <br>
+      <%= render :partial => 'pages/contact_form' %>
+    </div>
+  </div>
+
+  <br><br>
+
+ 

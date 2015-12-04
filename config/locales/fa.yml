@@ -1,0 +1,732 @@
+fa:
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+# IMPORTANT!! prepend lines with spaces not tabs
+  time:
+    formats:
+      pretty: "%a, %b %e at %l:%M %p"
+      long: "%e %B %Y، ساعت %H:%M"
+  about: "درباره"
+  account: "حساب کاربری"
+  account_delete: "حذف حساب کاربری"
+  account_deleted: "حساب کاربری شما حذف شد."
+  account_delete_message: "آیا می خواهید حساب کاربری خود را حذف کنید؟"
+  account_edit: "تنظیم حساب کاربری"
+  account_error_edit: "مشکلاتی در تغییر دادن حساب کاربری شما رخ داده است:"
+  account_not_found: "حساب کاربری شما یافت نشد."
+  account_update: "به روزرسانی حساب کاربری"
+  action: "Action"
+  admin: "مدیر"
+  ago: "قبلا"
+  api_key: "API Key"
+  api_key_delete: "حذف API Key"
+  api_key_key: "Key"
+  api_key_new: "ایجاد یک API Key جدید"
+  api_key_read: "خواندن API Keys"
+  api_key_read_new: "ایجاد یک Read API Key جدید"
+  api_key_write: "Write API Key"
+  api_key_write_new: "ایجاد یک Write API Key جدید"
+  api_keys: "API Keys"
+  apps: "برنامه های کاربردی"
+  authorization: "اجازه"
+  average: "میانگین"
+  blog: "وبلاگ"
+  channel: "کانال"
+  channel_clear: "پاک کردن محتویات یک کانال"
+  channel_clear_message: "آیا می خواهید تمام اطلاعات فیدها در این کانال حذف شود؟"
+  channel_error: "مشکلی در ایجاد کانال شما به وجود آمده است:"
+  channel_update_success: "کانال به روزرسانی شد"
+  channel_feed: "اطلاعات کانال"
+  channel_default_field: "نام فیلد"
+  channel_default_name: "کانال"
+  channel_delete_message: "آیا می خواهید این کانال را حذف کنید؟"
+  channel_description: "توضیحات"
+  channel_directions: "موضوعات"
+  channel_id: "شناسه ی کانال"
+  channel_log_to: "Log to Channel"
+  channel_logged_to: "Logged to Channel"
+  channel_name: "نام"
+  channel_ranking: "درصد پیشرفت"
+  channel_not_public: "این کانال عمومی نیست"
+  channel_permission: "شما اجازه ی مشاهده ی این کانال را ندارید."
+  channel_url: "URL"
+  channels: "کانال ها"
+  channels_my: "کانال های من"
+  channels_near: "Channels Near"
+  channels_public: "کانال های عمومی"
+  channels_public_view: "مشاهده ی کانال های عمومی"
+  channel_video_type_blank: "Either Youtube, or Vimeo, is required if a Video ID is specified."
+  chart_max: "ماکزیمم داده ها"
+  chart_min: "مینی موم داده ها"
+  chart_background_color: "رنگ پس زمینه"
+  chart_is_dynamic: "پویا؟"
+  chart_embed_code: "کد نهفته شده ی چارت"
+  chart_example: "چارت نمونه"
+  chart_color: "رنگ"
+  chart_no_access: "کانال عمومی نیست. برای چارت های خصوصی یا کانال باید عمومی شود یا کلید خواندن(read key) باید معلوم شود."
+  chart_owned: "نمودارهای شما"
+  chart_round: "Rounding"
+  chart_type: "نوع"
+  chart_update: "به روزرسانی نمودار"
+  chart_xaxis: "محور X"
+  chart_yaxis: "محور Y"
+  chart_yaxis_min: "مقدار مینی موم محور Y"
+  chart_yaxis_max: "مقدار ماکسیمم محور Y"
+  charts: "نمودارها"
+  comment_add: "اضافه کردن یک نظر"
+  comment_flag: "گزارش سوء استفاده"
+  comment_reply: "پاسخ دادن"
+  comment_reported: "گزارش شد!"
+  confirm_account_delete: "آیا شما اطمینان دارید که می خواهید حساب خود را پاک کنید؟ این کار قابل بازگشت نیست."
+  confirm_read_key_delete: "آیا اطمینان دارید که می خواهید این Read API Key  را حذف کنید؟"
+  confirm_channel_clear: "آیا اطمینان دارید که میخواهید اطلاعات این کانال را پاک کنید؟"
+  confirm_channel_delete: "آیا اطمینان دارید که می خواهید این کانال را حذف کنید؟"
+  confirm_comment_delete: "آیا اطمینان دارید که میخواهید این نظر را پاک کنید؟"
+  confirm_device_delete: "آیا مطمئنید که می خواهید این دستگاه را حذف کیند؟"
+  confirm_device_random_mac: "آیا مطمئنید که می خواهید یک مک آدرس تصادفی برای شما تولید شود؟"
+  confirm_device_unique_mac: "آیا مطمئنید که می خواهید یک مک آدرس یگانه برای دستگاه خود تولید کنید؟"
+  confirm_new_api_key: "آیا مطمئنید که می خواهید یک Write API Key جدید برای شما تولید شود؟"
+  confirm_new_talkback_key: "آیا مطمئنید که می خواهید یک TalkBack API Key جدید برای شما تولید شود؟"
+  confirm_new_thinghttp_key: "آیا مطمئنید که می خواهید یک Thinghttp API Key جدید برای شما تولید شود؟"
+  confirm_new_thingtweet_key: "آیا مطمئنید که می خواهید یک ThingTweet API Key جدید برای شما تولید شود؟"
+  confirm_new_user_api_key: "آیا مطمئنید که می خواهید یک API Key جدید برای شما تولید شود؟"
+  confirm_plugin_delete: "آیا مطمئنید که می خواهید این افزونه را حذف کنید؟"
+  confirm_react_delete: "آیا مطمئنید که می خواهید این React را حذف کنید؟"
+  confirm_talkback_delete: "آیا مطمئنید که می خواهید این TalkBack را حذف کنید؟"
+  confirm_thinghttp_delete: "آیا مطمئنید که می خواهید این ThingHttp را حذف کنید؟"
+  confirm_timecontrol_delete: "آیا مطمئنید که می خواهید این TimeControl را حذف کنید؟?"
+  confirm_tweetcontrol_delete: "آیا مطمئنید که می خواهید این TweetControl را حذف کنید؟?"
+  confirm_twitter_delete: "آیا مطمئنید که می خواهید این حساب کاربری تویتر را حذف کنید؟"
+  contact_us: "تماس با ما"
+  contact_us_no_email: "شما باید یک آدرس پست الکترونیکی معتبر وارد کنید."
+  contact_us_no_message: "لطفا یک پیام در فرم تماس با ما برای ما ارسال کنید."
+  contact_us_success: "پیام شما با موفقیت ارسال شد."
+  create_account: "ایجاد حساب کاربری"
+  create_model: "ساختن %{model}"
+  created: "ساخنه شد"
+  data: "داده"
+  days: "روزها"
+  default: 'پیش فرض'
+  delete: "حذف"
+  delete_model: "حذف کردن %{model}"
+  developer_info: "اطلاعات توسعه دهنده"
+  device_create: "اضافه کردن دستگاه جدید."
+  device_custom_mac: "وارد کردن مک آدرس دستی"
+  device_default_name: "دستگاه"
+  device_default_gateway: "Default Gateway IP"
+  device_delete: "حذف دستگاه"
+  device_delete_message: "آیا می خواهید این دستگاه را حذف کنید؟"
+  device_edit: "ویرایش اطلاعات دستگاه"
+  device_error: "مشکلی در ایجاد دستگاه شما وجود دارد:"
+  device_ip_address: "Public IP Address"
+  device_local_ip_address: "Local IP Address"
+  device_local_port: "Local Port"
+  device_mac: "مک آدرس"
+  device_mac_invalid: "مک آدرس نامعتبر است."
+  device_model: "مدل"
+  device_port: "Public Port Number"
+  device_random_mac: "تولید مک آدرس تصادفی"
+  device_submit_custom_mac: "دخیره ی مک آدرس دستی"
+  device_subnet: "Subnet Mask"
+  device_title: "عنوان"
+  device_unique_mac: "تولید می آدرس یکتا"
+  device_update: "به روز رسانی دستگاه"
+  devices: "دستگاه ها"
+  documentation: "مستندات"
+  download: "دانلود"
+  download_feeds: "دانلود تمام اطلاعات این کانال در فرمت CSV."
+  edit: "ویرایش"
+  edit_model: "ویرایش %{model}"
+  elevation: "ارتفاع"
+  email: "پست الکترونیکی"
+  email_address: 'آدرس پست الکترونیکی'
+  export: "ایجاد خروجی"
+  featured_channels: "کانال های مهم"
+  selected_channels: "کانال ها"
+  features: "ویژگی ها"
+  field: "فیلد"
+  forgot: "رمز خود را فراموش کرده اید؟"
+  forum: "تالار گفتوگو"
+  for_more_information: "اطلاعات بیشتر"
+  frequency: 'فرکانس'
+  generate_thingtweet_arduino_code: "تولید کد آردوینو ی ThingTweet"
+  get_started: "همین حالا شروع کنید."
+  height: "ارتفاع"
+  home_motto: ""
+  home_tagline: ""
+  hour: 'ساعت'
+  import: "وارد کردن"
+  latitude: "Latitude"
+  longitude: "Longitude"
+  median: "میانه"
+  member_since: "Member since"
+  message: 'پیام'
+  message_field: "فیلد پیام"
+  metadata: 'فراداده'
+  minute: 'دقیقه'
+  minutes: 'دقیقه ها'
+  myaccount: "حساب کابری من"
+  name: 'نام'
+  new: "جدید"
+  new_model: "%{model} جدید"
+  note: "یادداشت"
+  note_save: "ذخیره کردن یادداشت."
+  one_time: 'one time'
+  password: "رمز عبور"
+  password_change: "تغییر رمز عبور"
+  password_confirmation: "تایید رمز عبور"
+  password_current: "رمز کنونی"
+  password_forgot: "آیا رمز خود را فراموش کرده اید؟"
+  password_forgot_message: "آدرس ایمیل خود را وارد کنید. ما برای شما ایمیلی ارسال خواهیم کرد که حاوی لینک تغییر رمز عبور است."
+  password_incorrect: "رمز کنونی شما به درستی وارد نشده است."
+  password_new: "ایجاد یک رمز جدید."
+  password_reset_message1: "درخواستی برای تغییر رمز عبور شما ارسال شد."
+  password_reset_message2: "اگر شما این در خواست را نداده اید لطفا این پیام را نادیده بگیرید."
+  password_reset_message3: "اگر شما این درخواست را ارسال کرده اید لطفا برروی لینک زیر کلیک کنید."
+  password_reset_error: "خطایی در ارسال عملیات تغییر رمز رخ داده است."
+  password_reset_mailed: "مراحل تغییر رمز عبور برای شما ارسال شد."
+  password_reset_subject: "دستورالعمل تغییر رمز عبور ThingTalk"
+  permission: "شما اجازه ی دسترسی به این قسمت را ندارید."
+  plugin: "افزونه"
+  plugin_chart: "Chart With Multiple Series"
+  plugin_create: "ایجاد افزونه"
+  plugin_css: "CSS"
+  plugin_default_name: "Plugin"
+  plugin_delete_message: "آیا می خواهید این افزونه حذف شود؟"
+  plugin_error: "مشکلی در اضافه کردن افزونه ی شما وجود دارد:"
+  plugin_html: "HTML"
+  plugin_js: "JavaScript"
+  plugin_name: "Name"
+  plugin_new_message: "Please select a template to use with your new plugin."
+  plugin_save_message: "افزونه ی شما ذخیره شد."
+  plugin_template: "Plugin Template"
+  plugins: "افزونه ها"
+  plugin_public_flag: "آیا می خواهید عمومی شود؟"
+  profile_bio: "Bio"
+  profile_edit: "ویرایش اطلاعات عمومی."
+  profile_for: "مشخصات"
+  profile_not_public: "این مشخصات اختصاصی است."
+  profile_not_public_me: "مشخصات شما عمومی نیست."
+  profile_update: "به روز رسانی مشخصات"
+  profile_view: "مشاهده ی مشخصات عمومی"
+  profile_website: "وب سایت"
+  public: "آیا می خواهید عمومی شود؟"
+  public_profile: "مشخصات عمومی"
+  react: "React"
+  react_header_name: "نام"
+  react_delete_confirm: "آیا مطمئنید که می خواهید این شرط را حذف کنید؟"
+  react_thinghttp_error: "'%{thinghttp_name}' درخواست مربوط به شما نیست"
+  react_thingtweet_error: "'%{twitter_account_name}' حساب کاربری تویتر مورد نظر متعلق به شما نیست."
+  react_channel_error: "'%{channel_name}' کانال متعلق به شما نیست."
+  react_invalid_error: "%{value} یک مقدار معتبر نیست."
+  react_invalid_number_error: "%{value} شماره ی یک فیلد نیست."
+  react_invalid_condition_error: "%{value} شرط معتبری نیست"
+  react_invalid_condition_type_error: "%{value} نوع سرط معتبر نیست."
+  react_twitter_account_required: "شما باید یک حساب کاربری تویتر ایحاد کنید تا بتوانید از امکان tweeting استفاده کنید."
+  react_add_twitter_account: "اضافه کردن حساب کاربری تویتر."
+  react_thinghttp_required: "شما باید یک درخواست ThingHTTP ایجاد کنید."
+  react_add_thinghttp_req: "Add ThingHTTP request"
+  react_tweet_cant_be_blank: "The tweet can't be blank"
+  react_type_string: "String"
+  react_type_status: "Status"
+  react_type_numeric: "Numeric"
+  react_type_geo: "Geo"
+  react_type_nodata: "No Data Check"
+  react_when_insert: "On Data Insertion"
+  react_when_10m: "Every 10 minutes"
+  react_when_30m: "Every 30 minutes"
+  react_when_60m: "Every 60 minutes"
+  react_condition_prefix: "If channel"
+  react_condition_field: "field"
+  react_condition_contains: "contains"
+  react_condition_begins: "starts with"
+  react_condition_ends: "ends with"
+  react_condition_gt: "is greater than"
+  react_condition_gte: "is greater than or equal to"
+  react_condition_lt: "is less than"
+  react_condition_lte: "is less than or equal to"
+  react_condition_eq: "is equal to"
+  react_condition_ne: "is not equal to"
+  react_condition_within: "is within"
+  react_condition_further: "is further than"
+  react_condition_nodata_prefix: "has not been updated for"
+  react_condition_nodata_suffix: "minutes"
+  react_condition_geo: "km from"
+  react_latitude: "latitude"
+  react_longitude: "longitude"
+  react_twitter_delete_warning1: "Cannot delete this Twitter account as it is used by %{reacts_count}: %{reacts_list}"
+  react_twitter_delete_warning2: "Please delete or modify this React before unlinking this Twitter account."
+  react_thinghttp_delete_warning1: "Cannot delete this ThingHTTP as it is used by %{reacts_count}: %{reacts_list}"
+  react_thinghttp_delete_warning2: "Please delete or modify this React before unlinking this ThingHTTP."
+  react_default_name: "React"
+  react_delete_message: "Want to delete this React?"
+  react_label_condition: "Condition"
+  react_label_test_frequency: "Test Frequency"
+  react_label_react_name: "React Name"
+  react_label_condition_type: "Condition Type"
+  react_label_options: "Options"
+  react_action_tweet_prefix: "then tweet"
+  react_action_tweet_suffix: "using Twitter account"
+  react_action_thinghttp_prefix: "then perform ThingHTTP"
+  react_option_run_first_time: "Run action only the first time the condition is met"
+  react_option_run_every_time: "Run action each time condition is met"
+  recurring: 'recurring'
+  remember_me: "حساب کاربری من را به خاطر بسپار"
+  results: "نتایج"
+  save: "ذخیره سازی."
+  save_model: "ذخیره ی %{model}"
+  saved: "به موفقیت ذخیره شد."
+  saved_error: "خطا در ذخیره سازی داده ها."
+  search: "جستوجو"
+  search_by_tag: "جستجو بر اساس تگ"
+  search_by_username: "جستجو بر اساس نام کاربری."
+  search_empty: "هیچ نتیجه ای یافت نشد."
+  search_input_tag: "وارد کردن تگ."
+  search_input_username: "وارد کردن نام کاربری"
+  signin: "ورود"
+  signin_failure: "خطا در ورود."
+  signin_please: "لطفا وارد حساب کاربری خود شوید."
+  signin_try_again: "نام کاربری یا رمز عبور نادرست است. لطفا دوباره تلاش کنید."
+  signout: "خروج"
+  signup: "عضو شوید"
+  signup_header: "برای شروع کار با ThinkTalk عضو شوید."
+  slug: "Slug"
+  social_channel: "کانال های اجتماعی."
+  social_channel_create: "اضافه کردن یک کانال اجتماعی جدید."
+  social_channel_error_fields: "کانال شما باید حداقل یک فیلد دشاته باشد."
+  social_channel_error_name_blank: "نام نمی تواند خالی باشد."
+  social_channel_no_value: "لطفا یک مقدار وارد کنید."
+  social_channel_error_slug_blank: "Slug cannot be blank."
+  social_channel_error_slug_exists: "Slug is already taken."
+  social_channel_new: "کانال اجتماعی جدید."
+  social_saved: "تایید شد. با تشکر"
+  submit: "تایید"
+  sum: "جمع"
+  support: "پشتیبانی"
+  tag: "برچسب"
+  tags: "برچسب ها"
+  tags_search: "جستجوی کانال ها"
+  talkback: "TalkBack"
+  talkback_command_add: "Add a new command"
+  talkback_command_command_string: "Command string"
+  talkback_command_id: "Command ID"
+  talkback_command_position: "Position"
+  talkback_command_remove: "Remove command"
+  talkback_commands: "Commands"
+  talkback_delete_message: "Want to delete this TalkBack?"
+  talkback_edit: "Edit TalkBack"
+  talkback_error: "There were some problems creating your TalkBack:"
+  talkback_id: "TalkBack ID"
+  talkback_name: "Name"
+  talkback_new_api_key: "Regenerate API Key"
+  talkback_permission: "This TalkBack doesn't belong to you."
+  talkback_required: "You need to add a TalkBack"
+  thinghttp: "ThingHTTP"
+  thinghttp_auth_name: "HTTP Auth Username"
+  thinghttp_auth_pass: "HTTP Auth Password"
+  thinghttp_body: "Body"
+  thinghttp_content_type: "Content Type"
+  thinghttp_default_name: "Request"
+  thinghttp_delete_message: "Want to delete this ThingHTTP?"
+  thinghttp_error: "There were some problems creating your ThingHTTP:"
+  thinghttp_header_add: "add new header"
+  thinghttp_header_name: "Name"
+  thinghttp_header_remove: "remove header"
+  thinghttp_header_value: "Value"
+  thinghttp_headers: "Headers"
+  thinghttp_host: "Host"
+  thinghttp_http_version: "HTTP Version"
+  thinghttp_invalid_api_key: "Invalid API Key"
+  thinghttp_loop: "Please don't try to send ThingHTTP into a loop!"
+  thinghttp_method: "Method"
+  thinghttp_name: "Name"
+  thinghttp_new_api_key: "Regenerate API Key"
+  thinghttp_parse: "Parse String"
+  thinghttp_parse_error: "Error parsing document, try a different parse string."
+  thinghttp_permission: "You don't have permission to view that ThingHTTP!"
+  thingtweet: "ThingTweet"
+  thingtweet_arduino_select_message: "Select Twitter account to use for this code"
+  thingtweet_back: "Back to ThingTweet"
+  timecontrol: "TimeControl"
+  timecontrols: "TimeControls"
+  timecontrol_action_talkback_command: "then add command"
+  timecontrol_action_talkback_command_position: "at position"
+  timecontrol_action_talkback_prefix: "to TalkBack"
+  timecontrol_date: 'date'
+  timecontrol_days: 'days'
+  timecontrol_delete_message: "Want to delete this TimeControl?"
+  timecontrol_error: "There were some problems creating your TimeControl:"
+  timecontrol_fuzzy_time: 'fuzzy time'
+  timecontrol_max_message: "You have reached the maximum number of TimeControls available per user. Please delete an existing TimeControl before adding a new one."
+  timecontrol_permission: "You don't have permission to view that TimeControl!"
+  timecontrol_run_at: 'run at'
+  timecontrol_time: 'time'
+  timecontrol_talkback_delete_warning1: "Cannot delete this TalkBack as it is used by %{timecontrols_count}: %{timecontrols_list}"
+  timecontrol_talkback_delete_warning2: "Please delete or modify this TimeControl before unlinking this TalkBack."
+  timecontrol_twitter_delete_warning1: "Cannot delete this Twitter account as it is used by %{timecontrols_count}: %{timecontrols_list}"
+  timecontrol_twitter_delete_warning2: "Please delete or modify this TimeControl before unlinking this Twitter account."
+  timecontrol_thinghttp_delete_warning1: "Cannot delete this ThingHTTP as it is used by %{timecontrols_count}: %{timecontrols_list}"
+  timecontrol_thinghttp_delete_warning2: "Please delete or modify this TimeControl before unlinking this ThingHTTP."
+  timescale: "Timescale"
+  time_zone: "Time Zone"
+  title: "عنوان"
+  tos: "قوانین استفاده"
+  tos_agree: "با عضویت شما پذیرفته اید که:"
+  try_again: "لطفا دوباره تلاش کنید!"
+  tutorials: "آموزش ها"
+  tweetcontrol: "TweetControl"
+  tweetcontrol_delete_message: "Want to delete this TweetControl?"
+  tweetcontrol_error: "There were some problems creating your TweetControl:"
+  tweetcontrol_thinghttp: "ThingHTTP Action"
+  tweetcontrol_trigger: "Trigger"
+  twitter_delete: "Unlink Account"
+  twitter_failure: "Twitter failure."
+  twitter_invalid_api_key: "Invalid API Key"
+  twitter_link_account: "Link Twitter Account"
+  twitter_link_success: "has been successfully linked to ThingTweet."
+  twitter_new_api_key: "Regenerate API Key"
+  twitter_screen_name: "Twitter Account"
+  upload: "بارگذاری"
+  upload_incorrect_format: "فایل CSV شما به درستی نوشته نشده است."
+  upload_select: "بارگذاری یک فایل CSV برای افزودن اطلاعات به این کانال."
+  uploading: "در حال بارگذاری ..."
+  upload_successful: "با موفقیت بارگذاری شد."
+  upload_no_file: "لطفا فایلی که می خواهید بارگذاری کنید انتخاب کنید."
+  upload_no_data: "فایل بارگذاری شده خالی است."
+  url: "آدرس"
+  user: "کاربر"
+  user_no_public_channels: "این کاربر کانال عمومی ندارد."
+  user_not_found: "ببخشید کابر یافت نشد."
+  user_public_channels: "کانال های عمومی برای"
+  userid: "نام کاربری"
+  video_id: "Video ID"
+  view: "مشاهده"
+  vimeo: "Vimeo"
+  watched_channels: "کانال های مشاهده شده"
+  watched_empty: "شما در حال مشاهده ی هیچ کانالی نیستید."
+  watched_find: "یافتن کانال هایی برای مشاهد."
+  public_link: "عمومی"
+  private_link: "خصوصی"
+  settings_link: "تنظیمات"
+  api_key_link: "API Key"
+  data_import_link: "وارد کردن/نمایش داده"
+
+  width: "عرض"
+  youtube: "YouTube"
+
+# help section
+  help: "کمک"
+  help_api_documentation: "مستندات API"
+  help_apps_talkback: "دستگاه هایی که اجازه دارند دستورات در صف را اجرا کنند."
+  help_apps_thinghttp: "Create custom POSTs or GETs to other web services and retrieve the data."
+  help_apps_thingtweet: "Link your Twitter account to ThingSpeak and send Twitter messages using our simple API."
+  help_apps_timecontrol: "Automatically perform ThingHTTP or ThingTweet requests at predetermined times."
+  help_apps_tweetcontrol: "Listen to commands from Twitter and then perform an action."
+  help_apps_react: "Perform actions when conditions are met by your data in your channels."
+  help_channel: "ایجاد یک کانال ... این کانال می تواند مورد استفاده توسط یک دستنگاه یک برنامه ی موبایل یا هر چیزی که بتواند درخواست بدهد قرار گیرد."
+  help_channel_clear: "با کلیک برروی \"پاک کردن محتویات یک کانال\" می توانید اطلاعات فیلدهای کانال خود را پاک کنید. اما اطلاعات کانال شما دست نخورده باقی می ماند"
+  help_channel_ranking: "Completeness will help your channel appear higher in the list of public channels."
+  help_channel_feed: "مشاهده ی داده ها"
+  help_channel_fields: "اضافه کردن حداکثر 8 فیلد که می توانند ردیابی شوند. یک فیلد باید قبل از اینکه داده ای به آن اضافه شود ایجاد شده باشد."
+  help_channel_import: "یک فایل CSV روی هارد درایو خود انتخاب کنید و تمام داده های آن را داخل کانال قرار دهید. فایل CSV شما باید در ستون اول حاوی فیلد داده باشد. اگر داده ی شما شامل محدوده ی زمانی نیست لطفا یکی را انتخاب کنید."
+  help_channel_post: "افزودن داده با فرستاند POST یا GET به:"
+  help_channel_post_example: "لطفا کلید نوشتن (Write API KEY) را به همراه داده ها قرار دهید. برای مثال:"
+  help_channel_public: "این کانال را عمومی کنید تا به دیگران اجازه دهید فیدها و نمودارهای شما را بدون استفاده از API Key مشاهده کنند."
+  help_channel_read_key: "به کمک Read API keys می توانید به دیگران اجازه دهید که فیدها و نمودارهای شما را مشاهده کنند."
+  help_channel_read_key_note: "یادداشت ها برای استفادهی شخصی شما هستند. و می توانند مورد استفاده قرار بگیرند تا شما بتوانید بررسی کنید به چه کسانی read keyها را داده اید."
+  help_channel_update: "در حال ارسال داده"
+  help_channel_url: "به کمک فیلدهای URL شما می توانید لینکی برای دادن اطلاعات بیشتر برای کانال عمومی خود قرار دهید مانند پست یک وبلاگ یا وبسایت درباره ی کانال."
+  help_channel_video: "Add a video to the public view of your channel by providing a YouTube or Vimeo ID, which is found in the URL of your video."
+  help_channel_view: "مشهاده ی داده های کانال خود در:"
+  help_channel_write_key: "از Write API Key خود برای نوشتن برروی یا خواند از یک کانال استفاده کنید."
+  help_charts: "کمک درباره ی نمودارها"
+  help_charts_embed: "کد جاگذازی شده می تواند به هر وبسایتی اضافه شود و نمودار شما در آنجا قابل مشاهده است."
+  help_charts_options: "نمودار شخصی سازی شده ی خود را با انتخاب امکانت مورد نظر و کلیک برروی \"به روزرسانی\" بسازید."
+  help_device: "دستگاه خود را اضافه کنید و اطلاعات آن را برروی ThinkTalk قرار دهید."
+  help_device_edit: "اطلاعات دستگاه خود را در این صفحه اضافه کنید. شما می توانید یک مک آدرس را در صفحه ی بعد به دستگاها اختصاص دهید."
+  help_device_show: "تولید یک میک آدرس تصادرفی یا استفاده از یکی از مکی آدرس های رزرو شده ی ThinkTalk که هر کدام یکتا هستند."
+  help_plugins: "افزونه ها به شما کمک می کنند تا فایل های HTML و JavaScrip و CSS شخصی سازی شده بسازید که می تواند مورد استفاده قرار گیرد تا داده های شما را تجزیه کند و نمایش دهد."
+  help_social_channel: "ساختن یک کانال اجتماعی جدید که قابل دسترس خواهد بود در:"
+  help_social_channel_public: "تمام کانال های اجتماعی عمومی هستند. از فیلد پیام استفاده کنید تا اجازه دهید که کاربران دیگر داده های خود را وارد کنند."
+  help_talkback: "Send queued commands to your devices with TalkBack."
+  help_talkback_index: "Create a TalkBack and add some commands.  Your device can then execute the stored commands, and those commands will be removed from the queue."
+  help_talkback_channel: "If a channel log is set, executed commands will be automatically logged to the 'status' field of that channel."
+  help_talkback_commands_1: "Commands can be added here or"
+  help_talkback_commands_2: "via the API"
+  help_talkback_show: "To learn more about using TalkBack, we suggest checking out our"
+  help_thinghttp: "Use ThingHTTP to access other APIs or webpages and parse the responses. You can create and save a full HTTP request to any URL, and then easily access it by using your ThingHTTP API key."
+  help_thinghttp_edit: "Create your custom HTTP request on this page.  For example, try the following options:"
+  help_thinghttp_example: "This will send your HTTP GET request to Google Finance and parse the response for an element having an ID of ref_626307_c, which corresponds to the S&P 500 current price change for the day."
+  help_thinghttp_show: "You can now send your ThingHTTP request and view the response using the following URL:"
+  help_thingtweet: "ThingTweet acts as a proxy to Twitter so that your devices can update Twitter statuses without having to implement Open Authentication (OAuth)."
+  help_timecontrol_index: "Create a TimeControl to automatically execute ThingHTTP requests, update ThingTweet statuses, or add TalkBack commands at predetermined times."
+  help_timecontrol_show: "Your TimeControl will be automatically executed at the indicated time."
+  help_tweetcontrol: "Use TweetControl to listen to specific trigger words from Twitter, and then process a ThingHTTP request."
+  help_tweetcontrol_edit: "Select Anonymous TweetControl to allow anyone to trigger your TweetControl or fill in a specific Twitter Account (don't include the '@' sign)."
+  help_tweetcontrol_hashtag: "To trigger a TweetControl, you need to send a Twitter Status Update with at least the hashtag #thingspeak and the trigger word, for example:"
+  help_tweetcontrol_thinghttp: "Select a ThingHTTP request to use with this TweetControl. The ThingHTTP request will be executed when the TweetControl is triggered."
+  help_tweetcontrol_trigger: "Fill in a trigger to listen for."
+  help_options: "اطلاعات بیشتر"
+  help_react: "React allows you to trigger a ThingHTTP request or send a tweet using ThingTweet when your ThingSpeak Channel meets a certain condition. "
+  help_react_edit: "Update your React condition here."
+  help_react_edit1: "Select a condition type to correspond with the type of data you wish to check and set your condition values."
+  help_react_edit2: "Use the Test Frequency setting to choose to test your condition on every insert or on a periodic basis."
+  help_react_edit3: "Select ThingTweet or ThingHTTP as the action to be performed if the condition is met."
+
+  # unsorted
+  window_map: "مکان کانال"
+  window_status: "وضعیت بروزرسانی های کانال"
+  window_channel_video: "ویدیوهای کانال"
+  window_field_chart: "نمودار فیلد شماره %{field_number}"
+  window_plugin: "%{name} (افزونه)"
+  private_view: "مشاهده در حالت خصوصی"
+  public_view: "مشاهده در حالت عمومی"
+  channel_settings: "تنظیمات کانال"
+  data_import: "وارد کردن/دریافت اطلاعات"
+  portlets_all_displayed: "تمام پنجره های در دسترس نمایش داده شدند"
+  portlets_add: "برروی مستطیل کلیک کنید تا پنجره را به داشبورد خود اضافه کنید"
+  add_portlets: "Add Windows"
+
+  # documentation error headers
+  error_code: "کد خطا"
+  error_http_status: "HTTP Status"
+  error_message: "پیام"
+  error_details: "جزئیات"
+
+  # errors
+  error_codes:
+    error_auth_required:
+      message: "نیازمند مجوز است"
+      http_status: 401
+      details: "لطفا جزئیات اطلاعات مجوز قرار دهید."
+    error_resource_not_found:
+      message: "منبع یافت نشد"
+      http_status: 404
+      details: "منبع مورد درخواست یافت نشد. لطفا URL خود را بررسی کنید و دوباره تلاش کنید."
+    error_method_invalid:
+      message: "متد مورد استفاده مجاز نیست"
+      http_status: 405
+      details: "لطفا از متد HTTP مناسب برای این درخواست استفاده کنید."
+    error_no_action:
+      message: "هیچ عملی انجام نشد"
+      http_status: 421
+      details: "سرور تلاش کرد که درخواست شما را پردازش کند اما هیچ اتفاقی رخ نداد."
+    error_too_many_requests:
+      message: "تعداد درخواست های زیاد"
+      http_status: 429
+      details: "لطفا پیش از فرستادن درخواست دیگر چند لحظه صبر کنید."
+
+  number:
+    # Used in number_with_delimiter()
+    # These are also the defaults for 'currency', 'percentage', 'precision', and 'human'
+    format:
+      # Sets the separator between the units, for more precision (e.g. 1.0 / 2.0 == 0.5)
+      separator: "."
+      # Delimits thousands (e.g. 1,000,000 is a million) (always in groups of three)
+      delimiter: ","
+      # Number of decimals, behind the separator (the number 1 with a precision of 2 gives: 1.00)
+      precision: 3
+      # If set to true, precision will mean the number of significant digits instead
+      # of the number of decimal digits (1234 with precision 2 becomes 1200, 1.23543 becomes 1.2)
+      significant: false
+      # If set, the zeros after the decimal separator will always be stripped (eg.: 1.200 will be 1.2)
+      strip_insignificant_zeros: false
+
+    # Used in number_to_currency()
+    currency:
+      format:
+        # Where is the currency sign? %u is the currency unit, %n the number (default: $5.00)
+        format: "%u%n"
+        unit: "$"
+        # These five are to override number.format and are optional
+        separator: "."
+        delimiter: ","
+        precision: 2
+        significant: false
+        strip_insignificant_zeros: false
+
+    # Used in number_to_percentage()
+    percentage:
+      format:
+        # These five are to override number.format and are optional
+        # separator:
+        delimiter: ""
+        # precision:
+        # significant: false
+        # strip_insignificant_zeros: false
+        format: "%n%"
+
+    # Used in number_to_precision()
+    precision:
+      format:
+        # These five are to override number.format and are optional
+        # separator:
+        delimiter: ""
+        # precision:
+        # significant: false
+        # strip_insignificant_zeros: false
+
+    # Used in number_to_human_size() and number_to_human()
+    human:
+      format:
+        # These five are to override number.format and are optional
+        # separator:
+        delimiter: ""
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      # Used in number_to_human_size()
+      storage_units:
+        # Storage units output formatting.
+        # %u is the storage unit, %n is the number (default: 2 MB)
+        format: "%n %u"
+        units:
+          byte:
+            one:   "Byte"
+            other: "Bytes"
+          kb: "KB"
+          mb: "MB"
+          gb: "GB"
+          tb: "TB"
+      # Used in number_to_human()
+      decimal_units:
+        format: "%n %u"
+        # Decimal units output formatting
+        # By default we will only quantify some of the exponents
+        # but the commented ones might be defined or overridden
+        # by the user.
+        units:
+          # femto: Quadrillionth
+          # pico: Trillionth
+          # nano: Billionth
+          # micro: Millionth
+          # mili: Thousandth
+          # centi: Hundredth
+          # deci: Tenth
+          unit: ""
+          # ten:
+          #   one: Ten
+          #   other: Tens
+          # hundred: Hundred
+          thousand: هزار
+          million: میلیون
+          billion: میلیارد
+          trillion: تریلیارد
+          quadrillion: هزار تریلیارد
+
+  # Used in distance_of_time_in_words(), distance_of_time_in_words_to_now(), time_ago_in_words()
+  datetime:
+    distance_in_words:
+      half_a_minute: "نیم دقیقه"
+      less_than_x_seconds:
+        one:   "کمتر از ۱ ثانیه"
+        other: "کمتر از %{count} ثانیه"
+      x_seconds:
+        one:   "۱ ثانیه"
+        other: "%{count} ثانیه"
+      less_than_x_minutes:
+        one:   "کمتر از یک دقیقه"
+        other: "کمتر از %{count} دقیقه"
+      x_minutes:
+        one:   "۱ دقیقه"
+        other: "%{count} دقیقه"
+      about_x_hours:
+        one:   "حدودا ۱ ساعت"
+        other: "حدود %{count} ساعت"
+      x_days:
+        one:   "۱ روز"
+        other: "%{count} روز"
+      about_x_months:
+        one:   "حدودا ۱ ماه"
+        other: "حدود %{count} ماه"
+      x_months:
+        one:   "۱ ماه"
+        other: "%{count} ماه"
+      about_x_years:
+        one:   "حدودا ۱ سال"
+        other: "حدود %{count} سال"
+      over_x_years:
+        one:   "بیشتر از ۱ سال"
+        other: "بیشتر از %{count} سال"
+      almost_x_years:
+        one:   ""
+        other: "almost %{count} years"
+    prompts:
+      year:   "سال"
+      month:  "ماه"
+      day:    "روز"
+      hour:   "ساعت"
+      minute: "دقیقه"
+      second: "ثانیه"
+
+  helpers:
+    select:
+      # Default value for :prompt => true in FormOptionsHelper
+      prompt: "لطفا انتخاب کنید"
+
+    # Default translation keys for submit and button FormHelper
+    submit:
+      create: 'ساختن %{model}'
+      update: 'به روز رسانی %{model}'
+      submit: 'ذخیره سازی %{model}'
+
+# Devise translations
+# Additional translations at https://github.com/plataformatec/devise/wiki/I18n
+  devise:
+    confirmations:
+      confirmed: "حساب کاربری شما با موفقیت تایید شد."
+      send_instructions: "شما تا چند دقیقه دیگر ایمیلی درباره ی اینکه چگونه حساب خود را تایید کنید دریافت خواهید کرد."
+      send_paranoid_instructions: "اگر آدرس ایمیل شما در بانک اطلاعاتی ما وجود داشته باشد چند دقیقه دیگر ایملی درباره ی نحوه تایید حساب کابری خود دریافت خواهید کرد."
+    failure:
+      already_authenticated: "شما قبلا وارد شده اید."
+      inactive: "حساب کاربری شما هنوز فعال نشده است."
+      invalid: "نام کاربری یا رمز عبور نا معتبر است."
+      locked: "حساب کاربری شما قفل شده است."
+      last_attempt: "شما یک بار دیگر می توانید تلاش کنید پیش از آنکه حساب کاربری شما قفل شود."
+      not_found_in_database: "نام کاربری یا رمز عبور نا معتبر است.."
+      timeout: "session پایان یافته است. لطفا دوباره وارد شوید."
+      unauthenticated: "شما باید قبل از ادامه دادن وارد شودی یا عضو شوید."
+      unconfirmed: "شما باید قبل از ادامه دادن حساب کاربری خود را تایید کنید."
+    mailer:
+      confirmation_instructions:
+        subject: "دستورالعمل تایید حساب کاربری"
+      reset_password_instructions:
+        subject: "دستورالعمل بازیابی کلمه ی عبور"
+      unlock_instructions:
+        subject: "دستورالعمل بازکردن حساب کاربری"
+    omniauth_callbacks:
+      failure: "Could not authenticate you from %{kind} because \"%{reason}\"."
+      success: "Successfully authenticated from %{kind} account."
+    passwords:
+      no_token: "شما نمیت وانید به این صفحه دسترسی داشته باشید بدون وارد شدن از طریق ایمیل بازیابی رمز. در صورتی که از طریق ایمیل بازیابی رمز وارد شده اید مطمئن شوید که URL را به طور کامل وارد کرده اید."
+      send_instructions: "شما تا چند دقیقه دیگر ایمیلی حاوی دستورالعمل بازیابی رمز خود دریافت خواهید کرده."
+      send_paranoid_instructions: "اگر آدرس ایمیل شما در بانک اطلاعاتی ما وجود داشته باشد شما یک لینک بازیابی رمز از طریق ایمیل دریافت خواهید کرد."
+      updated: "رمز شما با موفقیت تغییر کرد. شما اکنون وارد شده اید."
+      updated_not_active: "رمز شما با موفقیت تغییر کرد."
+    registrations:
+      destroyed: "خدانگه دار! حساب کاربری شما با موفقیت حذف شد. امیدواریم که به زودی دوباره شما را ببینیم."
+      signed_up: "خوش آمدید! شما با موفقیت وارد شدید."
+      signed_up_but_inactive: "شما با موفقیت عضو شدید. ولی نمی توانیم شما را وارد سایت کنیم چون حساب شما فعال نشده است."
+      signed_up_but_locked: "شما با موفقیت عضو شدید. ولی نمی توانیم شما را وارد سایت کنیم چون حساب شما قفل است."
+      signed_up_but_unconfirmed: "پیامی حاوی لینک تایید برای شما ارسال شد. لطفا لینک را باز کنید تا حساب کاربری شما فعال شود."
+      update_needs_confirmation: "شما حساب کاربری خود را با موفقیت به روزرسانی کردید ولی ما نیاز داریم که شما آدرس ایمیل خود را تایید کنید. لطفا ایمل خود را مشاهده کنید و برروی لینک تایید کلیک کنید تا تایید ایمیل شما به پایان برسد."
+      updated: "شما حساب خود را با موفقیت به روزرسانی کردید."
+    sessions:
+      signed_in: "با موفقیت وارد شدید."
+      signed_out: "با موفقیت خارج شدید"
+    unlocks:
+      send_instructions: "شما تا چند دقیقه ی دیگر ایملی حاوی دستورالعمل چگونگی بازکردن حساب کاربری خود دریافت خواهید کرد."
+      send_paranoid_instructions: "اگر حساب شما وجود داشته باشد تا دقایقی دیگر شما ایمیلی حاوی دستورالعمل چگونیگی بازکردن حساب خود دریافت خواهید کرد."
+      unlocked: "حساب کاربری شما با موفقیت باز شد. لطفا برای ادامه وارد شوید."
+  errors:
+    messages:
+      already_confirmed: "قبلا تایید شدا است لطفا وارد شوید"
+      confirmation_period_expired: "باید تا %{period} تایید می شد, لطفا یک درخواست دیگر بدهید."
+      expired: "پایان یافته لطفا درخواست جدیدی بدهید."
+      not_found: "یافت نشد."
+      not_locked: "قفل نبوده است"
+      not_saved:
+        one: "۱ خطال از ذخیره شدن این منبع %{resource} جلوگیری کرده است:"
+        other: "%{count} خطا از ذخیره شدن این منبع %{resource} جلوگیری کرده است:"
+
